@@ -17,14 +17,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: "Say hello"
-          command:
-             lscpu \
-            apk add --no-cache \
-              py-pip=9.0.0-r1
-            pip install \
-              docker-compose\
-              awscli
-
+          command: lscpu 
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
