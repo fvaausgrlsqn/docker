@@ -12,7 +12,7 @@ jobs:
       - image: cimg/base:2022.09
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
-    resource_class: 2xlarge+
+    resource_class: xlarge
     steps:
       - checkout
       - setup_remote_docker
